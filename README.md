@@ -17,8 +17,12 @@ A ruby script that looks at all Halo-secured systems in a single portal account 
 
 * The Ruby interpreter must be installed on the machine that executes the script.
 * Access to wlslib.rb (A Ruby Library for accessing the CloudPassage API), available on GitHub here: https://github.com/cloudpassage/wlslib
-* These Ruby gems are required:  oauth2, rest-client, json, date, and optparse. The following command will install all optional gems needed by the CloudPasssage API clients: sudo gem install oauth2 rest-client json public_suffix ip
-* A read-only (preferred) or full access API key and secret , placed in /etc/halo-api-keys separated by a vertical pipe, like: aa00bb44|11111111222222223333333344444444 This file should be owned by the user that runs api scripts, mode 600. Developers only: If you're working with an alternate grid, put that grid's api hostname and port in the third column of the line: aa00bb44|11111111222222223333333344444444|api.example.com:9999
+* These Ruby gems are required:  oauth2, rest-client, json, date, and optparse. The following command will install all optional gems needed by the CloudPasssage API clients: 
+```
+sudo gem install oauth2 rest-client json public_suffix ip
+```
+* A read-only (preferred) or full access API key and secret , placed in /etc/halo-api-keys separated by a vertical pipe, like: aa00bb44|11111111222222223333333344444444 This file should be owned by the user that runs api scripts, mode 600. 
+* *Developers only: If you're working with an alternate grid, put that grid's api hostname and port in the third column of the line:* aa00bb44|11111111222222223333333344444444|api.example.com:9999
 
 ##Usage
 
