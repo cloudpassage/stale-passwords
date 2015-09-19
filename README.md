@@ -15,7 +15,7 @@ A ruby script that looks at all Halo-secured systems in a single portal account 
 
 ##Requirements and Dependencies
 
-* The Ruby interpreter must be installed on the machine that executes the script.
+* The Ruby interpreter (>2.0) must be installed on the machine that executes the script.
 * Access to wlslib.rb (A Ruby Library for accessing the CloudPassage API), available on GitHub here: https://github.com/cloudpassage/wlslib
 * These Ruby gems are required:  oauth2, rest-client, json, date, and optparse. The following command will install all optional gems needed by the CloudPasssage API clients: 
 ```
